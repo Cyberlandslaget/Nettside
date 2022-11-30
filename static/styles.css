@@ -126,7 +126,7 @@ a {
     text-decoration: none;
 }
 
-p, li {
+p, li, button {
     line-height: 1.7;
     font-size: var(--fs-sm);
     padding-top: 0.5rem;
@@ -147,6 +147,29 @@ li {
 .Link:hover {
     text-decoration: underline;
     transition: var(--anim-smooth);
+}
+
+.Button {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: var(--fs-md);
+    font-family: var(--ff-heading);
+    font-weight: 800;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    color: var(--clr-text-secondary);
+    background-color: var(--clr-red);
+    transition: var(--anim-smooth);
+}
+
+.Button:hover {
+    color: var(--clr-text-primary);
+    transition: var(--anim-smooth);
+    filter: brightness(120%);
+
 }
 
 .Heading {
@@ -337,7 +360,6 @@ li {
 
     .Calendar {
         flex-direction: column;
-        margin-bottom: 5rem;
     }
 
     .Calendar-Visuals, .Calendar-Dates {
