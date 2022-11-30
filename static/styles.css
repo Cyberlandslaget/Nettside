@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ---------------------------------------------- */
+
+:root {
+    --ff-heading: 'Play', sans-serif;
+    --ff-body: 'Open Sans', sans-serif;
+
+    /* Dynamic typography */
+    --fluid-min-width: 320;
+    --fluid-max-width: 1280;
+    --fluid-screen: 100vw;
+    --fluid-bp: calc(
+        (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+        (var(--fluid-max-width) - var(--fluid-min-width))
+    );
+
+    --f-xl-min: 32.00;
+    --f-xl-max: 80.00;
+    --fs-xl: calc(((var(--f-xl-min) / 16) * 1rem) + (var(--f-xl-max) - var(--f-xl-min)) * var(--fluid-bp));
+
+    --f-lg-min: 28.00;
+    --f-lg-max: 44.00;
+    --fs-lg: calc(((var(--f-lg-min) / 16) * 1rem) + (var(--f-lg-max) - var(--f-lg-min)) * var(--fluid-bp));
+
+    --f-md-min: 16.00;
+    --f-md-max: 24.00;
+    --fs-md: calc(((var(--f-md-min) / 16) * 1rem) + (var(--f-md-max) - var(--f-md-min)) * var(--fluid-bp));
+
+    --f-sm-min: 16.00;
+    --f-sm-max: 18.00;
+    --fs-sm: calc(((var(--f-sm-min) / 16) * 1rem) + (var(--f-sm-max) - var(--f-sm-min)) * var(--fluid-bp));
+
+    --f-icon-min: 48.00;
+    --f-icon-max: 80.00;
+    --fs-icon: calc(((var(--f-icon-min) / 16) * 1rem) + (var(--f-icon-max) - var(--f-icon-min)) * var(--fluid-bp));
+
+    --clr-text-primary: #FFF;
+    --clr-text-secondary: rgba(255, 255, 255, .7);
+    --clr-text-link: #5ee5cc;
+
+    --clr-red: #BA0C2F;
+    --clr-blue: #00205B;
+    --clr-background: #101010;
+
+    --clr-icon-discord: #3B5998;
+    --clr-icon-mail: #BA0C2F;
+
+    --anim-smooth: all .15s ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 1rem;
+    font-family: var(--ff-body);
+    color: var(--clr-text-secondary);
+    background-color: var(--clr-background);
+}
+
+main {
+    padding: 4rem 0;
+    width: min(100%, 1280px);
+    margin: 0 auto;
+}
+
+hr {
+    margin-bottom: 2rem;
+    color: var(--clr-text-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+p, li {
+    line-height: 1.7;
+    font-size: var(--fs-sm);
+    padding-top: 0.5rem;
+}
+
+li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.Link {
+    color: var(--clr-text-link);
+    font-weight: 550;
+    text-decoration: none;
+    transition: var(--anim-smooth);
+}
+
+.Link:hover {
+    text-decoration: underline;
+    transition: var(--anim-smooth);
+}
+
+.Heading {
+    color: var(--clr-text-primary);
+    font-size: var(--fs-lg);
+    font-family: var(--ff-heading);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    line-height: 3rem;
+}
+
+.Heading--lg {
+    font-size: var(--fs-xl);
+    text-shadow: 3px 5px var(--clr-background);
+    text-align: center;
+}
+
+.Block {
+    padding: max(5vh, 2rem);
+    margin-bottom: 3rem;
+}
+
+.Hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("landslaget.png");
+}
+
+.Hero_button {
+    position: absolute;
+    bottom: 8rem;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background: transparent;
+    color: var(--clr-text-secondary);
+    font-size: var(--fs-xl);
+    transition: var(--anim-smooth);
+}
+
+.Hero_button:hover {
+    cursor: pointer;
+    color: var(--clr-text-primary);
+    transition: var(--anim-smooth);
+}
+
+.Calendar {
+    display: flex;
+}
+
+.Calendar-Visuals {
+    width: 70%;
+    padding: 1rem 2rem;
+}
+
+.Calendar-Dates {
+    width: 30%;
+    padding: 1rem;
+}
+
+.Split {
+    display: flex;
+    align-items: center;
+}
+
+.SplitText {
+    flex-basis: 70%;
+}
+
+.SplitImg {
+    max-width: max(20%, 150px);
+    margin-left: 2rem;
+}
+
+.SplitImg--lg {
+    max-width: max(40%, 350px);
+}
+
+.Cards {
+    display: flex;
+    padding: 1rem 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.Card {
+    background-color: rgba(255, 255, 255, .4);
+    padding: 1rem;
+    margin: .5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-text-primary);
+    font-size: var(--fs-md);
+    text-transform: uppercase;
+    flex-direction: column;
+    text-align: center;
+    cursor: default;
+}
+
+.CardIcon {
+    font-size: var(--fs-icon);
+    margin-bottom: 1rem;
+}
+
+.Card p {
+  text-transform: none;
+}
+
+/* Icons */
+.SoMe {
+    font-size: var(--fs-icon);
+    color: var(--clr-text-primary);
+    padding: 1.2rem;
+    margin: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    aspect-ratio: 1 / 1;
+    transition: var(--anim-smooth);
+}
+
+.SoMe:hover {
+    transition: var(--anim-smooth);
+    opacity: 0.7;
+}
+
+.bi-discord {
+    background-color: var(--clr-icon-discord);
+    
+}
+
+.bi-envelope {
+    background-color: var(--clr-icon-mail);
+}
+
+/* Util */
+.Util--flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.Util--shadow {
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.75);
+}
+
+.Util--primary-color {
+    background-color: var(--clr-red);
+}
+
+.Util--secondary-color {
+    background-color: var(--clr-blue);
+}
+
+.Util--rounded {
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+    :root {
+        --fluid-screen: calc(var(--fluid-max-width) * 1px);
+    }
+}
+
+@media (max-width: 1280px) {
+    main {
+        padding: 0;
+    }
+
+    .Block {
+        margin-bottom: 0;
+    }
+
+    .Split {
+        flex-direction: column-reverse;
+    }
+
+    .SplitImg {
+        margin-left: 0;
+        margin-bottom: 1.7rem;
+    }
+
+    .Calendar {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .Calendar-Visuals, .Calendar-Dates {
+        width: auto;
+        margin-bottom: 2rem;
+    }
+}

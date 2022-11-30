@@ -1,0 +1,34 @@
+{
+  "name": "CyberlandsLaget",
+  "description": "Cyberlandslaget er “det norske landslaget i hacking” og er Norges bidrag til European Cybersecurity Challenge (ECSC).",
+  "categories": ["cyber", "security", "hacking"],
+  "icons": [
+    {
+      "src": "/static/logo-16px.png",
+      "sizes": "16x16",
+      "purpose": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/logo-32px.png",
+      "sizes": "32x32",
+      "purpose": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/logo-192px.png",
+      "sizes": "192x192",
+      "purpose": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/logo-512px.png",
+      "sizes": "512x512",
+      "purpose": "any",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
