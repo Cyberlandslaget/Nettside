@@ -81,8 +81,8 @@ table {
     --fs-icon: calc(((var(--f-icon-min) / 16) * 1rem) + (var(--f-icon-max) - var(--f-icon-min)) * var(--fluid-bp));
 
     --clr-text-primary: #FFF;
-    --clr-text-secondary: rgba(255, 255, 255, .7);
-    --clr-text-link: #5ee5cc;
+    --clr-text-secondary: rgba(255, 255, 255, 0.77);
+    --clr-text-link: #fff;
 
     --clr-red: #BA0C2F;
     --clr-blue: #00205B;
@@ -139,7 +139,7 @@ li {
 
 .Link {
     color: var(--clr-text-link);
-    font-weight: 550;
+    font-weight: 600;
     text-decoration: none;
     transition: var(--anim-smooth);
 }
@@ -160,7 +160,7 @@ li {
     outline: none;
     border: none;
     text-transform: uppercase;
-    color: var(--clr-text-secondary);
+    color: var(--clr-text-link);
     background-color: var(--clr-red);
     transition: var(--anim-smooth);
 }
@@ -262,7 +262,7 @@ li {
 }
 
 .Card {
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(107, 29, 29, 0.32);
     padding: 1rem;
     margin: .5rem;
     margin-bottom: 1.5rem;
@@ -284,6 +284,14 @@ li {
 
 .Card p {
   text-transform: none;
+}
+
+.CardTitle {
+  font-weight: bold;
+}
+
+.CardKey {
+  font-weight: bold;
 }
 
 /* Icons */
