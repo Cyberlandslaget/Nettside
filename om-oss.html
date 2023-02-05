@@ -143,4 +143,19 @@
     <li><a style="border-bottom: none;" class="nav-link footer-link" onclick="scrollToTop()">↑</a></li>
   </ul>
 </footer>
+  
+<script>
+    // Navigation
+  var is_nav_active = false;
+  document.querySelector(".menu-btn").onclick = async (event) => {
+    document.querySelector(".menu-btn").classList.toggle("active");
+    if (!is_nav_active) {
+      document.querySelector(".navigation").style.display = "block";
+      is_nav_active = true;
+    } else {
+      document.querySelector(".navigation").style.display = "";
+      is_nav_active = false;
+    }
+  };
+</script>
 </body>
