@@ -963,10 +963,6 @@ input[type="checkbox"]:checked::before {
     transform: translateX(-10%);
 }
 
-.discord-bar {
-    overflow-x: hidden;
-}
-
 
 /* UX Elements */
 #toaster {
@@ -994,7 +990,6 @@ input[type="checkbox"]:checked::before {
 
 #discord-bar {
   padding-block: 1.2rem;
-  padding-left: 1.5rem;
   overflow-x: hidden;
   white-space: nowrap;
   align-items: center;
@@ -1006,6 +1001,11 @@ input[type="checkbox"]:checked::before {
   font-weight: bold;
   padding: 0;
   margin-right: 0;
+  transform: translateX(-1em);
+}
+
+#discord-bar span {
+  transform: translateX(-0.5em);
 }
 
 #discord-bar span:nth-child(3n + 1) {
