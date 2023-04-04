@@ -553,8 +553,21 @@ input[type="checkbox"]:checked::before {
     grid-template-columns: repeat(6, 1fr);
 }
 
-.partner-grid {
-    grid-template-columns: repeat(4, 1fr);
+.partner-grid-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+.partner-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.partner-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.partner-grid-desktop {
+  display: inherit;
+}
+.partner-grid-mobile {
+  display: none;
 }
 
 .calendar-grid {
@@ -1298,8 +1311,14 @@ input[type="checkbox"]:checked::before {
         grid-template-columns: 1fr;
     }
 
-    .partner-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .partner-grid-desktop {
+      display: none !important;
+    }
+    .partner-grid-mobile {
+      display: inherit !important;
+    }
+    .partner-grid-mobile .pad {
+      padding: var(--fs-lg);
     }
 
     .profile-grid {
