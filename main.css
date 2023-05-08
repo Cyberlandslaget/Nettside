@@ -664,6 +664,10 @@ input[type="checkbox"]:checked::before {
     height: 12rem;
 }
 
+.v-divider-6 {
+    height: 6rem;
+}
+
 
 .image {
     max-width: 40em;
@@ -1239,6 +1243,10 @@ input[type="checkbox"]:checked::before {
 
     .v-divider {
       height: 5rem;
+    }
+
+    .v-divider-6 {
+      height: 2rem;
     }
 
     .avatar-box {
