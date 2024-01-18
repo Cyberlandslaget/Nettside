@@ -53,7 +53,7 @@ table {
 
 :root {
     --ff-primary: 'Space Grotesk', sans-serif;
-    --ff-secondary: 'Playfair Display', serif;
+    --ff-secondary: 'Montserrat', sans-serif;
 
     /* Dynamic typography */
     --fluid-min-width: 320;
@@ -107,11 +107,11 @@ table {
     --clr-text-link: #004068;
 
     --clr-red: #ff343f;
-    --clr-blue: #004068;
+    --clr-blue: #17619d;
     --clr-white: #fff;
     --clr-background: #181c29;
     --clr-background-accent: #0e1018;
-    --clr-background-light: #21273a;
+    --clr-background-light: #21273b;
     --clr-solved: rgb(38, 217, 38);
 
     --anim-smooth: all .15s ease-in-out;
