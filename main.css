@@ -1574,3 +1574,20 @@ input[type="checkbox"]:checked::before {
         opacity: 1;
     }
 }
+
+.notification-bar {
+    text-align: center;
+    justify-content: center;
+    font-size: var(--fs-xs);
+    font-weight: bold;
+  }
+
+.notification-bar a:hover {
+    color: var(--clr-white);
+    background-color: none;
+}
+
+.notification-bar a:hover,
+.notification-bar button:hover {
+    cursor: pointer;
+}
