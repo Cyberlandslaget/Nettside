@@ -654,6 +654,10 @@ input[type="checkbox"]:checked::before {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.partner-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .partner-grid-desktop {
     display: inherit;
 }
