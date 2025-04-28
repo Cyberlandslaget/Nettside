@@ -161,6 +161,10 @@ table {
     --f-lg-max: 36.00;
     --fs-lg: calc(((var(--f-lg-min) / 16) * 1rem) + (var(--f-lg-max) - var(--f-lg-min)) * var(--fluid-bp));
 
+    --f-md2-min: 20.00;
+    --f-md2-max: 28.00;
+    --fs-md2: calc(((var(--f-md-min) / 16) * 1rem) + (var(--f-md-max) - var(--f-md-min)) * var(--fluid-bp));
+
     --f-md-min: 16.00;
     --f-md-max: 24.00;
     --fs-md: calc(((var(--f-md-min) / 16) * 1rem) + (var(--f-md-max) - var(--f-md-min)) * var(--fluid-bp));
@@ -333,6 +337,14 @@ button:hover {
     font-weight: 600;
     text-transform: uppercase;
     font-size: var(--fs-md);
+}
+
+.title-md2 {
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: var(--fs-md2);
+    color: var(--clr-red);
 }
 
 .title-lg {
