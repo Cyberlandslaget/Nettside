@@ -278,6 +278,10 @@ button:hover {
     cursor: pointer;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -842,6 +846,7 @@ input[type="checkbox"]:checked::before {
 .section-btn {
     position: absolute;
     bottom: -1.5rem;
+    z-index: 10;
 }
 
 .collapsed {
@@ -1005,6 +1010,13 @@ input[type="checkbox"]:checked::before {
 }
 
 
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
 
 .flex {
     display: flex;
