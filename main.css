@@ -908,6 +908,10 @@ input[type="checkbox"]:checked::before {
 .h-inset-md {
     padding-left: 1rem;
 }
+.h-inset-md2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 .h-offset-lg {
     margin-left: 2.5rem;
